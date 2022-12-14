@@ -22,6 +22,11 @@ const Map = ({ places }: MapProps) => {
     <MapContainer
       center={[0, 0]}
       zoom={3}
+      minZoom={3}
+      maxBounds={[
+        [-180, 180],
+        [180, -180]
+      ]}
       style={{ width: '100%', height: '100%' }}
     >
       <TileLayer
